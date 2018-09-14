@@ -4,10 +4,6 @@
   box-sizing: border-box;
   outline: none; }
 
-body {
-  font-family: 'PTSans-Bold', sans-serif;
-  background: url(../images/bg_wrap.png) repeat; }
-
 a {
   text-decoration: none; }
 

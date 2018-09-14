@@ -1,0 +1,363 @@
+.timeline-title-wrap {
+    position: absolute;
+    top: 98px;
+    width: 100%;
+    z-index: 5
+}
+
+.timeline-title-wrap .section-title {
+    margin-bottom: 56px;
+    text-align: center;
+    text-align: center;
+    font-size: 61px;
+    color: #fff;
+    font-weight: 100;
+}
+.timeline-title-wrap .section-title span:nth-child(2){
+ 
+       font-size: 70px;
+    font-weight: 700;
+}
+.printed .timeline-title-wrap
+.reveal {
+    color: #fff
+}
+
+.timeline-title-wrap .reveal:before {
+    background-color: #fff
+}
+
+.timeline-section {
+    margin-bottom: 172px
+}
+
+.scrollmagic-pin-spacer {
+    margin-bottom: 0 !important
+}
+
+#timeline-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    perspective: 1000;
+    margin-bottom: 185px;
+    position: relative
+}
+
+#slider-container {
+    width: 500%;
+    height: 100%
+}
+
+.biography {
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 18px;
+    margin-top: -12%;
+    fill: rgba(20, 20, 20, .46);
+    z-index: 3;
+    opacity: 0
+}
+
+.printed
+.biography {
+    opacity: 1;
+    transition: opacity 1.4s ease-in .4s
+}
+
+.slide {
+    height: 100vh;
+    width: 20%;
+    float: left;
+    text-align: center;
+    position: relative;
+    color: #fff
+}
+
+.pin {
+    position: relative;
+    left: 50%;
+   width: 20px;
+    top: -7px;
+    height: 20px;
+    margin-left: -5px;
+    margin-top: -5px;
+    border: 3px solid #f0ae23;
+    background-color: #1b222e;
+    border-radius: 10px;
+    z-index: 5;
+    transition: background-color .5s
+}
+
+.progress-timeline {
+    position: absolute;
+    bottom: 28%;
+    left: 0;
+    width: 100%;
+    z-index: 4
+}
+
+.prog-line {
+    position: relative;
+    height: 3px;
+    width: 100%;
+    background-color: #5b5b5b;
+    z-index: 4
+}
+
+.prog-line-fill {
+    height: 3px;
+    position: absolute;
+    top: 0;
+    width: 0;
+    background-color: #f0ae23;
+    z-index: 4
+}
+
+.years {
+    position: absolute;
+    color: #fff;
+    left: 0;
+    top: -100%;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    margin-left: -50px;
+    margin-top: -56px;
+    transition: color .5s;
+    z-index: 4
+}
+
+.years-content {
+      font-size: 20px;
+    margin-bottom: 32px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.slide-text {
+    color: #fff;
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    width: 540px;
+    transform: translate(-50%, 0);
+    z-index: 5;
+    text-align: center
+}
+
+.slide-content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    opacity: 0;
+    transform: translate3d(-50%, 0, 0);
+    transition: opacity .8s, transform .8s cubic-bezier(.37, .01, 0, .98)
+}
+
+.fillpin
+.pin {
+    background: #f0ae23;
+}
+
+.years.fillpin {
+    color: #fff
+}
+
+.slide-content.printed {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+}
+
+.slide-from-left
+canvas {
+    z-index: 4
+}
+
+canvas.video-canvas {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, 0)
+}
+
+.awards {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: -12px;
+    top: 12%
+}
+
+.rocket-animation {
+    animation: .2s ease infinite RocketShuffle
+}
+
+@-webkit-keyframes RocketShuffle {
+    0% {
+        transform: rotate(0)
+    }
+    25% {
+        transform: rotate(-8deg)
+    }
+    75% {
+        transform: rotate(8deg)
+    }
+    100% {
+        transform: rotate(0)
+    }
+}
+
+.footer-bottom {
+    position: relative;
+    z-index: 201
+}
+
+canvas {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+    display: inline-block
+}
+
+.canvas.hidden {
+    transition: opacity 1s ease;
+    opacity: 0
+}
+
+.spaceship-canvas {
+    position: absolute;
+    top: 90vh;
+    left: 8%;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    transform-origin: 0 0;
+    will-change: transform;
+    pointer-events: none;
+    z-index: 9999;
+    transition: .2s ease opacity
+}
+
+.spaceship-canvas
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 32px;
+    transform: translate(-50%, -50%);
+    transform-origin: 0 0;
+    pointer-events: none;
+    text-shadow: 0 0 4px #000;
+    transition: .2s ease font-size
+}
+
+.spaceship-canvas {
+    opacity: 0
+}
+
+.spaceship {
+    display: inline-block;
+    font-size: 22px;
+    position: relative;
+    margin-right: 10px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden
+}
+
+.spaceship:hover {
+    cursor: pointer
+}
+
+.cosmos-cursor {
+    cursor: none !important;
+    overflow: hidden;
+    position: relative
+}
+
+.cosmos-cursor *:hover {
+    cursor: none !important
+}
+
+.cosmos-cursor .footer-mail,
+.cosmos-cursor .social-link {
+    pointer-events: none
+}
+
+.canvas-enable #bg-canvas {
+    pointer-events: auto;
+    z-index: 100
+}
+
+.canvas-enable .footer-bottom {
+    pointer-events: none
+}
+
+.footer .make-in-cosmos {
+    pointer-events: auto
+}
+
+.cosmos-in .footer .printed .reveal,
+.cosmos-in .footer .copy-right,
+.cosmos-in .footer .social-link .strike span,
+.cosmos-in .footer .social-link li:after,
+.cosmos-in .footer .animate-line,
+.cosmos-in .footer .footer-mail svg,
+.cosmos-in .footer .say-hello {
+    opacity: 0.08 !important;
+    transition: opacity .8s ease
+}
+
+.cosmos-out .footer .printed .reveal,
+.cosmos-out .footer .animate-line,
+.cosmos-out .footer .footer-mail svg,
+.cosmos-out .footer .copy-right,
+.cosmos-out .footer .social-link .strike span,
+.cosmos-out .footer .social-link li:after,
+.cosmos-out .footer .say-hello {
+    opacity: 1 !important;
+    transition: opacity 1.5s ease
+}
+
+.cosmos-out.cosmos-cursor .footer .printed .reveal,
+.cosmos-out.cosmos-cursor .footer .copy-right,
+.cosmos-out.cosmos-cursor .footer .social-link .strike span,
+.cosmos-out.cosmos-cursor .footer .social-link li:after,
+.cosmos-out.cosmos-cursor .footer .animate-line,
+.cosmos-out.cosmos-cursor .footer .footer-mail svg,
+.cosmos-out.cosmos-cursor .footer .say-hello {
+    opacity: 0.08 !important;
+    transition: opacity .8s ease
+}
+
+.cosmos-in .header,
+.cosmos-in .header .menu,
+.cosmos-in .bottom .col-sm-6 {
+    opacity: 0.27 !important;
+    transition: opacity .8s ease
+}
+
+.cosmos-out .header,
+.cosmos-out .header .menu,
+.cosmos-out .bottom .col-sm-6 {
+    opacity: 1 !important;
+    transition: opacity 1.5s ease
+}
+
+.cosmos-out.cosmos-cursor .header,
+.cosmos-out.cosmos-cursor .header .menu,
+.cosmos-out.cosmos-cursor .bottom .col-sm-6 {
+    opacity: 0.27 !important;
+    transition: opacity .8s ease
+}
